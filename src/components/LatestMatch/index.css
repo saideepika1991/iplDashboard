@@ -1,0 +1,102 @@
+.details-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-title {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 27px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.date {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.venue {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.result {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  font-weight: bold;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-logo {
+  height: 200px;
+  width: 200px;
+}
+.first-innings {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.first-innings-team {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.second-innings {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.second-innings-team {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.man-of-the-match-name {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.man-of-the-match {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.umpires {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.umpires-names {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}

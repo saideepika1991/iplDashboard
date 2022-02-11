@@ -1,0 +1,11 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-not-found {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 40px;
+  font-weight: bold;
+}
