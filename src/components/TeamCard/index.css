@@ -1,1 +1,30 @@
-/* Write your CSS here */
+.list-team-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #475569;
+  border-radius: 9px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #475569;
+  list-style-type: none;
+  width: 450px;
+}
+.team-image-url {
+  height: 140px;
+  margin-right: 20px;
+}
+.team-title {
+  font-family: 'Bree Serif';
+  font-size: 40px;
+  font-weight: 500;
+}
+.link-to-description {
+  text-decoration: none;
+  color: #000000;
+}

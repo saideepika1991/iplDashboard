@@ -18,20 +18,22 @@ class TeamMatches extends Component {
     const {params} = match
     const {id} = params
     const response = await fetch(`https://apis.ccbp.in/ipl/${id}`)
-    const data = await response.json()
+    const output = await response.json()
     const updatedData = {
-      teamBannerUrl: data.team_banner_url,
-      result: data.result,
-      manOfTheMatch: data.man_of_the_match,
-      date: data.date,
-      venue: data.venue,
-      competingTeam: data.competing_team,
-      competingTeamLogo: data.competing_team_logo,
-      firstInnings: data.first_innings,
-      secondInnings: data.second_innings,
-      matchStatus: data.match_status,
-      umpires: data.umpires,
+      teamBannerUrl: output.team_banner_url,
+      id: output.id,
+      result: output.result,
+      manOfTheMatch: output.man_of_the_match,
+      date: output.date,
+      venue: output.venue,
+      competingTeam: output.competing_team,
+      competingTeamLogo: output.competing_team_logo,
+      firstInnings: output.first_innings,
+      secondInnings: output.second_innings,
+      matchStatus: output.match_status,
+      umpires: output.umpires,
     }
+
     this.setState({iplData: updatedData, isLoading: false})
   }
 
@@ -41,8 +43,16 @@ class TeamMatches extends Component {
 
     return (
       <div className="team-match-container">
-        <img src={teamBannerUrl} className="team-banner-url" alt="name" />
-        <LatestMatch />
+        <img
+          src={teamBannerUrl}
+          className="team-banner-url"
+          alt="team banner"
+        />
+        <ul>
+          {iplData.map(eachIpl => (
+            <LatestMatch key={eachIpl.id} matchCardDetails={eachIpl} />
+          ))}
+        </ul>
         <ul className="list-ipl-items">
           {iplData.map(eachTeam => (
             <MatchCard key={eachTeam.id} matchCardDetails={eachTeam} />
